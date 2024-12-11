@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart $500 Gift Card Offer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: white;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            animation: bounce 1.5s infinite;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .image-container {
+            margin-top: 30px;
+            animation: bounce 1.5s infinite;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .form-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 10px;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            background-color: #f0f0f0;
+            color: #333;
+            animation: bounce 1s infinite, glow 1.5s infinite;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .btn {
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: bounce 1s infinite, glow 1.5s infinite;
+        }
+
+        .btn:hover {
+            background-color: #f57c00;
+        }
+
+        .security-message {
+            font-size: 0.8rem;
+            color: #dcdcdc;
+            margin-top: 5px;
+        }
+
+        .countdown {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .steps {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .steps .step {
+            margin: 10px 0;
+            color: #ff9800;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            border-radius: 5px;
+            animation: bounce 1s infinite;
+        }
+
+        .popup-notification {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: bounce 1s infinite;
+        }
+
+        .popup-notification img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .social-proof {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .social-proof p {
+            margin: 5px 0;
+        }
+
+        .affiliate-link-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: transparent;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: none;
+        }
+
+        .affiliate-link-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .countdown-timer {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .menu-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            animation: bounce 1s infinite;
+        }
+
+        .menu-btn:hover {
+            color: #ff9800;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="menu-btn" onclick="window.location.href='https://go4affm.com/c/?p=40201&o=20849&subid=1234';">☰</button>
+    
+    <div class="title">Get Your Walmart $500 Gift Card</div>
+    <div class="subtitle">Simply submit your email and claim your gift card now!</div>
+
+    <div class="image-container">
+        <img src="https://i.ibb.co/bbdgYWq/4fa2d762bed0.jpg" alt="Walmart Gift Card">
+    </div>
+
+    <div class="form-container">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <div class="security-message">Your information is secure and will not be shared.</div>
+        <button class="btn" id="claimBtn">Claim Now</button>
+    </div>
+
+    <div class="countdown">
+        <p>Offer ends in <span id="timer" class="countdown-timer"></span></p>
+    </div>
+
+    <div class="steps">
+        <div class="step">1. Enter your email</div>
+        <div class="step">2. Check your email</div>
+        <div class="step">3. Claim your Walmart $500 Gift Card</div>
+    </div>
+
+    <div class="social-proof">
+        <p>100% Legit, No Purchase Required</p>
+        <p>Follow us on social media for more offers!</p>
+    </div>
+
+    <div class="popup-notification" id="popupNotification">
+        <img src="https://i.ibb.co/BcMK6M0/fee371dfa528.gif" alt="Logo">
+        <p>John from California just won a walmart $500 gift card!</p>
+    </div>
+
+    <div class="security-message">
+        Your Information is Safe & Secure.
+        <br>
+        No Hidden Fees or Costs.
+    </div>
+
+    <script>
+        // Countdown Timer
+        const countdownDate = new Date().getTime() + (24 * 60 * 60 * 1000); // 24 hours from now
+        const timerElement = document.getElementById("timer");
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            timerElement.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                clearInterval(x);
+                timerElement.innerHTML = "EXPIRED";
+            }
+        }
+
+        setInterval(updateTimer, 1000);
+
+        // Claim Now Button
+        document.getElementById("claimBtn").onclick = function() {
+            const email = document.getElementById("email").value;
+            if (email) {
+                window.location.href = "https://go4affm.com/c/?p=40201&o=20849&subid=1234";
+            } else {
+                alert("Please enter a valid email!");
+            }
+        }
+    </script>
+</body>
+</html>
